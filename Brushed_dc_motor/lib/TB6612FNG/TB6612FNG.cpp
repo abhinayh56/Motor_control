@@ -112,7 +112,7 @@ void TB6612FNG::commandMotorA(double voltInMotorA)
     digitalWrite(m_pinINA_2, HIGH);
   }
 
-  analogWrite(m_pinPWM_A, constrain(static_cast<int>(voltInMotorA * static_cast<double>(m_pwmMax) / m_voltInDriver), 0, m_pwmMax));
+  analogWrite(m_pinPWM_A, constrain(static_cast<int>(voltInMotorA * static_cast<double>(m_pwmMax) / m_voltInDriver), static_cast<int>(0), static_cast<int>(m_pwmMax)));
 }
 
 void TB6612FNG::commandMotorB(double voltInMotorB)
@@ -131,7 +131,7 @@ void TB6612FNG::commandMotorB(double voltInMotorB)
     digitalWrite(m_pinINB_2, HIGH);
   }
   
-  analogWrite(m_pinPWM_B, constrain(static_cast<int>(voltInMotorB * static_cast<double>(m_pwmMax) / m_voltInDriver), 0, m_pwmMax));
+  analogWrite(m_pinPWM_B, constrain(static_cast<int>(voltInMotorB * static_cast<double>(m_pwmMax) / m_voltInDriver), static_cast<int>(0), static_cast<int>(m_pwmMax)));
 }
 
 void TB6612FNG::eStopDrive()
