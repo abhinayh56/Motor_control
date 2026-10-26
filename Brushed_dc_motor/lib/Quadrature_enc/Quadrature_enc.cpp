@@ -14,11 +14,18 @@ void Quadrature_enc::config(uint64_t cprOutput, int pinA, int pinB, void (*isrHa
 
 void Quadrature_enc::init()
 {
-    attachInterrupt(digitalPinToInterrupt(m_pinA), m_isrHandler, CHANGE);
-    attachInterrupt(digitalPinToInterrupt(m_pinB), m_isrHandler, CHANGE);
+
+    pinMode(m_pinA, INPUT);
+    pinMode(m_pinB, INPUT);
+
+    a_prev = digitalRead(m_pinA);
+    b_prev = digitalRead(m_pinB);
 
     m_time = micros();
     m_timePrev = m_time;
+
+    attachInterrupt(digitalPinToInterrupt(m_pinA), m_isrHandler, CHANGE);
+    attachInterrupt(digitalPinToInterrupt(m_pinB), m_isrHandler, CHANGE);
 }
 
 void Quadrature_enc::isrFunction()
