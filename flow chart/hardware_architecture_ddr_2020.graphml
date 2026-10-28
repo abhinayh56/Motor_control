@@ -20,7 +20,7 @@
           <y:Geometry height="156.84000000000003" width="91.0" x="1518.1199999999246" y="383.91999999999996"/>
           <y:Fill color="#E8EEF7" color2="#E8EEF7" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.015625" x="3.4921875" xml:space="preserve" y="61.718828125000016">L298N motor
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.015625" x="3.4921875" xml:space="preserve" y="61.718828125000016">L298N Motor
 Driver Module<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
@@ -39,7 +39,7 @@ Driver Module<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
     <node id="n2">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="50.15808000000004" width="115.99999999999989" x="1361.9183999999436" y="737.91744"/>
+          <y:Geometry height="50.15808000000004" width="115.99999999999989" x="1361.9183999999436" y="708.91744"/>
           <y:Fill color="#E8EEF7" color2="#E8EEF7" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.337890625" x="17.3310546875" xml:space="preserve" y="15.728454062499964">Li-Ion Battery<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -49,7 +49,7 @@ Driver Module<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
     <node id="n3">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="50.15808000000004" width="116.0" x="1361.9183999999436" y="657.75936"/>
+          <y:Geometry height="50.15808000000004" width="116.0" x="1361.9183999999436" y="628.75936"/>
           <y:Fill color="#E8EEF7" color2="#E8EEF7" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="48.103515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.00390625" x="27.998046875" xml:space="preserve" y="1.0272821875000773">Voltage
@@ -244,7 +244,7 @@ PC<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelPa
     <node id="n12">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="62.84000000000003" width="97.0" x="1093.5007999998504" y="256.78993515625"/>
+          <y:Geometry height="62.84000000000003" width="97.0" x="1093.5007999998504" y="266.78993515625"/>
           <y:Fill color="#E8EEF7" color2="#E8EEF7" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="75.3203125" x="10.83984375" xml:space="preserve" y="22.069414062500016">Wi-Fi Router<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -275,8 +275,8 @@ PC<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelPa
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="-25.110289375000207" tx="-28.47282922108991" ty="78.5928649917162">
-            <y:Point x="1419.9183999999436" y="636.2448304640001"/>
-            <y:Point x="1391.4455707788538" y="613.716830464"/>
+            <y:Point x="1419.9183999999436" y="607.2448304640001"/>
+            <y:Point x="1391.4455707788538" y="584.716830464"/>
           </y:Path>
           <y:LineStyle color="#FF0000" type="line" width="2.0"/>
           <y:Arrows source="none" target="none"/>
@@ -288,8 +288,8 @@ PC<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelPa
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="30.78320000003737" sy="-25.049337500000092" tx="0.0" ty="0.0">
-            <y:Point x="1450.701599999981" y="636.023604992"/>
-            <y:Point x="1563.6199999999246" y="636.023604992"/>
+            <y:Point x="1450.701599999981" y="607.023604992"/>
+            <y:Point x="1563.6199999999246" y="607.023604992"/>
           </y:Path>
           <y:LineStyle color="#FF0000" type="line" width="2.0"/>
           <y:Arrows source="none" target="none"/>
@@ -435,8 +435,8 @@ PC<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelPa
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-40.21679999996263" ty="0.0">
-            <y:Point x="1266.7167999999626" y="636.2448304640001"/>
-            <y:Point x="1379.701599999981" y="636.2448304640001"/>
+            <y:Point x="1266.7167999999626" y="607.2448304640001"/>
+            <y:Point x="1379.701599999981" y="607.2448304640001"/>
           </y:Path>
           <y:LineStyle color="#FF0000" type="line" width="2.0"/>
           <y:Arrows source="none" target="none"/>
@@ -455,7 +455,6 @@ PC<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelPa
       </data>
     </edge>
     <edge id="e15" source="n12" target="n11">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
