@@ -9,7 +9,7 @@ class Quadrature_enc
 public:
     Quadrature_enc();
 
-    void config(uint64_t cprOutput, int pinA, int pinB, void (*isrHandler)(void));
+    void config(uint64_t cprOutput, int pinA, int pinB, void (*isrHandler)(void), bool reverse);
 
     void init();
 
@@ -25,6 +25,7 @@ private:
     uint64_t m_cprOutput;
     uint8_t m_pinA;
     uint8_t m_pinB;
+    bool m_reverse;
     void (*m_isrHandler)(void);
 
     volatile int64_t m_count = 0;

@@ -4,11 +4,12 @@ Quadrature_enc::Quadrature_enc()
 {
 }
 
-void Quadrature_enc::config(uint64_t cprOutput, int pinA, int pinB, void (*isrHandler)(void))
+void Quadrature_enc::config(uint64_t cprOutput, int pinA, int pinB, void (*isrHandler)(void), bool reverse)
 {
     m_cprOutput = cprOutput;
     m_pinA = pinA;
     m_pinB = pinB;
+    m_reverse = reverse;
     m_isrHandler = isrHandler;
 }
 
@@ -83,10 +84,10 @@ void Quadrature_enc::update()
 
 double Quadrature_enc::getAngle()
 {
-    return m_angle;
+    return m_angle * ((m_reverse == true) ? -1 : 1);
 }
 
 double Quadrature_enc::getAngularSpeed()
 {
-    return m_angularSpeed;
+    return m_angularSpeed * ((m_reverse == true) ? -1 : 1);
 }

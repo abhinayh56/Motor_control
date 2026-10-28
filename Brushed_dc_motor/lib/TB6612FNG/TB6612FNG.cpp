@@ -19,34 +19,16 @@ void TB6612FNG::configMotorA(uint8_t pinPWM_A, uint8_t pinINA_1, uint8_t pinINA_
 {
   m_pinPWM_A = pinPWM_A;
   m_reverseMotorA = reverse;
-
-  if(reverse)
-  {
-    m_pinINA_1 = pinINA_2;
-    m_pinINA_2 = pinINA_1;
-  }
-  else
-  {
-    m_pinINA_1 = pinINA_1;
-    m_pinINA_2 = pinINA_2;
-  }
+  m_pinINA_1 = pinINA_1;
+  m_pinINA_2 = pinINA_2;
 }
 
 void TB6612FNG::configMotorB(uint8_t pinPWM_B, uint8_t pinINB_1, uint8_t pinINB_2, bool reverse)
 {
   m_pinPWM_B = pinPWM_B;
   m_reverseMotorB = reverse;
-
-  if(reverse)
-  {
-    m_pinINB_1 = pinINB_2;
-    m_pinINB_2 = pinINB_1;
-  }
-  else
-  {
-    m_pinINB_1 = pinINB_1;
-    m_pinINB_2 = pinINB_2;
-  }
+  m_pinINB_1 = pinINB_1;
+  m_pinINB_2 = pinINB_2;
 }
 
 void TB6612FNG::init()
@@ -98,6 +80,7 @@ void TB6612FNG::enableMotorB()
 
 void TB6612FNG::commandMotorA(double voltInMotorA)
 {
+  voltInMotorA = voltInMotorA * ((m_reverseMotorA == true) ? -1 : 1);
   voltInMotorA = constrain(voltInMotorA, -m_voltInDriver, m_voltInDriver);
 
   if(voltInMotorA < 0)
@@ -117,6 +100,7 @@ void TB6612FNG::commandMotorA(double voltInMotorA)
 
 void TB6612FNG::commandMotorB(double voltInMotorB)
 {
+  voltInMotorB = voltInMotorB * ((m_reverseMotorB == true) ? -1 : 1);
   voltInMotorB = constrain(voltInMotorB, -m_voltInDriver, m_voltInDriver);
 
   if(voltInMotorB < 0)
