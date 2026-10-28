@@ -1,7 +1,7 @@
 #ifndef CONTROL_SYSTEM_PID_PID_LPF_1_H
 #define CONTROL_SYSTEM_PID_PID_LPF_1_H
 
-#include <cstdint>
+#include <stdint.h>
 #include "utility.h"
 
 namespace control_system

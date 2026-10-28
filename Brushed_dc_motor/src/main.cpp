@@ -24,7 +24,7 @@ void setup()
   motorDriver.enableMotorA();
   motorDriver.enableMotorB();
 
-  encoder.config(5800, 2, 3, []() { encoder.isrFunction(); });
+  encoder.config(5800, 2, 3, []() { encoder.isrFunction(); }, false);
   encoder.init();
 }
 
