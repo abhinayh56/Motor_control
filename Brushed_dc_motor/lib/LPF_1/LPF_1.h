@@ -3,18 +3,8 @@
 
 namespace filter
 {
-	/**
-	 * @namespace filter
-	 * @brief Contains digital signal filtering algorithms.
-	 */
-
 	namespace low_pass
 	{
-		/**
-		 * @namespace low_pass
-		 * @brief Contains low-pass filter implementations.
-		 */
-
 		/**
 		 * @class LPF_1
 		 * @brief First-order low-pass filter.
